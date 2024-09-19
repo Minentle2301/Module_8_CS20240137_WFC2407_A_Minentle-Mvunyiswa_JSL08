@@ -28,6 +28,9 @@ class BankBranch {
 const branchA = new BankBranch({code : 47100, location : '23 Alberton road'});
 const branchB = new BankBranch({code : 9876, location : '98 Bhoza road'});
 
+console.log(branchA.getBranchInfo()); // Output: Branch 1 Info
+console.log(branchB.getBranchInfo()); // Output: Branch 1 Info (since the singleton instance already exists)
+console.log(branchA === branchB); // Output: true (both variables point to the same instance)
 
 
 
