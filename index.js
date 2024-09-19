@@ -4,6 +4,31 @@
 
 let bankBranchInstance = null;
 
+class BankBranch {
+    
+    // 3. Create a constructor that takes `branchInfo` as a parameter.
+    constructor(branchInfo) {
+        // Check if the singleton instance already exists
+        if (bankBranchInstance === null) {
+            // If no instance exists, assign the current instance to the singleton variable
+            this.branchInfo = branchInfo;
+            bankBranchInstance = this;
+        } else {
+            // If an instance already exists, return the existing instance
+            return bankBranchInstance;
+        }
+    }
+
+    // Method to get branch information
+    getBranchInfo() {
+
+        return this.branchInfo;
+    }
+}
+
+
+
+
 // 2. Define a class called `BankBranch` for managing branch information.
 
 
