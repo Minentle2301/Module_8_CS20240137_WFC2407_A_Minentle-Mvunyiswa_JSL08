@@ -25,6 +25,9 @@ class BankBranch {
         return this.branchInfo;
     }
 }
+const branchA = new BankBranch({code : 47100, location : '23 Alberton road'});
+const branchB = new BankBranch({code : 9876, location : '98 Bhoza road'});
+
 
 
 
