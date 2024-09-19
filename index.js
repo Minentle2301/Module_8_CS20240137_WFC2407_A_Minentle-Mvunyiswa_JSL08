@@ -25,7 +25,9 @@ class BankBranch {
         return this.branchInfo;
     }
 }
+// Creating the first instance of BankBranch
 const branchA = new BankBranch({code : 47100, location : '23 Alberton road'});
+// Creating the second instance of BankBranch
 const branchB = new BankBranch({code : 9876, location : '98 Bhoza road'});
 
 console.log(branchA.getBranchInfo()); // Output: Branch 1 Info
